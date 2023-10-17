@@ -1,0 +1,149 @@
+* {
+    font-size: 22px;
+    box-sizing: border-box;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #333;    
+    margin: 0;
+}
+
+table, tr, th, td, caption {
+    border: 1px solid whitesmoke;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+}
+
+h3 {
+    text-align: center;
+    margin: 0;
+}
+
+h4 {
+    text-align: center;
+    margin: 0;
+}
+
+h5 {
+    text-align: center;
+    margin: 0;
+}
+
+h6 {
+    text-align: center;
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+.profile-pic {
+    width: 10%;
+    /* border: 1px solid #fff; */
+}
+
+.profile-pic img {
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+    border: 5px double gray;
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.basic hr {
+    width: 15%;
+}
+
+.separate {
+    width: 35%;
+}
+
+/* .basic h2 {
+    margin: 0;
+} */
+
+.education {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.code hr {
+    width: 30%;
+}
+
+pre {
+    border: 1px dashed aliceblue;
+    margin: 1rem;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-inline: 2rem;
+    background-color: #000;
+    text-decoration: none;
+    padding: 0;
+}
+
+nav li a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+.video figure{
+    display: flex;
+    justify-content: center;
+}
+
+.video video {
+    width: 50%;
+    border: 1px solid aliceblue;
+    border-style: groove ;
+} 
+
+.video h3 {
+    text-align: center;
+}
+
+.video hr {
+    width: 50%;
+}
