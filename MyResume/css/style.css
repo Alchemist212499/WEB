@@ -94,6 +94,7 @@ img {
 pre {
     border: 1px dashed aliceblue;
     margin: 1rem;
+    text-wrap: wrap;
 }
 
 nav {
