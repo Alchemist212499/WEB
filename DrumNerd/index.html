@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drumstick Nerd</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- <script src="js/script.js"></script> -->
 </head>
 
 <body>
-    <header>
+
+    
+
+    <header id="banner">
         <h1>Drumstick Nerd</h1>
         <!-- <p>A website dedicated to drummers who are seeking for in-depth comparison among various drumsticks</p> -->
-    
         <nav aria-label="stick-material" class="primary-nav">
             <ul>
                 <li><a href="#oak">Oak</a></li>
@@ -25,9 +28,8 @@
     <main>
 
         <article id="oak">
-            <h2>OAK STICKS</h2>
-
-            <section id="introduction">
+            <section class="introduction">
+                <header><h2>OAK STICKS</h2></header>
                 <p>Oak is, with Maple and Hickory, one of the top 3 types of wood for drumsticks. It is usually appreciated for its resistance and its weight as it is the heaviest option for wooden drumsticks.</p>
                 <p>Oak is ideal if you are looking for a lot of feedback while you're playing. It allows for louder hits without requiring too much strength.</p>
                 <p>However, it doesn't absorb much of the vibrations which can be tiring for the wrists and could damage your cymbals in the long run. Also, its lack of flexibility makes it easy to break on a wrong hit instead of bending like other wood types.</p>
@@ -52,34 +54,142 @@
                 </ul>
             </nav>
 
-            <section id="comparison">
-                <div id="5a-oak">
-                    <figure id="tama">
-                        <img src="img/oak/tama-5a-full-balane.jpg" alt="tama-5a-full-balance" title="tama-5a-full-balance" width="40%"> <!-- https://www.tama.com/usa/products/detail/ol-fu.html -->
-                    </figure>
-                    <figure id="promark">
-                        <img src="img/oak/promark-5a-attac-747b.jpg" alt="promark-5a-attack-747b" title="promark-5a-attack-747b" width="40%"> <!-- https://www.daddario.com/products/percussion/promark/promark-drum-set/promark-drum-set/classic-attack-747b-shira-kashi-oak-drumstick-oval-wood-tip/ -->  
-                    </figure>
-                </div>
+            <section class="comparison">
+                <header id="5a-oak"><h2>5A OAK</h2></header>
+                <figure id="tama">
+                    <a href="https://www.tama.com/usa/products/detail/ol-fu.html"><img src="img/oak/tama-5a-full-balance.jpg" alt="tama-5a-full-balance" title="tama-5a-full-balance"></a> <!--  -->
+                </figure>
+                <figure id="promark">
+                    <a href="https://www.daddario.com/products/percussion/promark/promark-drum-set/promark-drum-set/classic-attack-747b-shira-kashi-oak-drumstick-oval-wood-tip/ "><img src="img/oak/promark-5a-attack-747b.jpg" alt="promark-5a-attack-747b" title="promark-5a-attack-747b" width="40%"></a> <!-- -->  
+                </figure>
+
+                <table id="tama">
+                    <tbody>
+                        <tr class="brand">
+                            <th>Brand</th>
+                            <td>TAMA</td>
+                        </tr>
+                        <tr class="model">
+                            <th>Model</th>
+                            <td>Oak Lab - Full Balance</td>
+                        </tr>
+                        <tr class="material">
+                            <th>Material</th>
+                            <td>Japanese Oak</td>
+                        </tr>
+                        <tr class="diameter">
+                            <th>Diameter</th>
+                            <td>14.5mm (5A)</td>
+                        </tr>
+                        <tr class="length">
+                            <th>Length</th>
+                            <td>406mm</td>
+                        <tr class="tip">
+                            <th>Tip</th>
+                            <td>True Round</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="promark">
+                    <tbody>
+                        <tr class="brand">
+                            <th>Brand</th>
+                            <td>PROMARK</td>
+                        </tr>
+                        <tr class="model">
+                            <th>Model</th>
+                            <td>Attack 747B</td>
+                        </tr>
+                        <tr class="material">
+                            <th>Material</th>
+                            <td>Lacquered Shira Kashi Oak</td>
+                        </tr>
+                        <tr class="diameter">
+                            <th>Diameter</th>
+                            <td>15mm (5A)</td>
+                        </tr>
+                        <tr class="length">
+                            <th>Length</th>
+                            <td>425.5mm</td>
+                        </tr>
+                        <tr class="tip">
+                            <th>Tip</th>
+                            <td>Oval Shape</td>
+                        </tr>
+                    </tbody>
+                </table>                    
             </section>
 
-            <section id="comparison">
-                <div id="7a-oak">
-                    <figure id="promark">
-                        <img src="" alt="promark-7a-classic-attack" title="promark-7a-classic-attack"> <!-- https://www.amazon.com/ProMark-Drum-Sticks-Classic-Drumsticks/dp/B0002CZWM2?th=1 -->
-                    </figure>
-                    <figure id="tama">
-                        <img src="" alt="tama-7a-traditional" title="tama-7a-traditional"> <!-- https://www.tama.com/usa/products/detail/7a.html -->
-                    </figure>
-                </div>
+            <section class="comparison" id="7a-oak">
+                <header id="7a-oak"><h2>7A OAK</h2></header>
+                <figure id="tama">
+                    <a href="https://www.tama.com/usa/products/detail/7a.html"><img src="img/oak/tama-7a-traditional.jpg" alt="tama-7a-traditional" title="tama-7a-traditional"></a> <!--  -->
+                </figure>
+                <figure id="promark">
+                    <a href="https://www.amazon.com/ProMark-Drum-Sticks-Classic-Drumsticks/dp/B0002CZWM2?th=1"><img src="img/oak/promark-7a-classic-attack.jpg" alt="promark-7a-classic-attack" title="promark-7a-classic-attack"></a> <!--  -->
+                </figure>
+
+                <table id="tama">
+                    <tbody>
+                        <tr class="brand">
+                            <th>Brand</th>
+                            <td>TAMA</td>
+                        </tr>
+                        <tr class="model">
+                            <th>Model</th>
+                            <td>Traditional Series</td>
+                        </tr>
+                        <tr class="material">
+                            <th>Material</th>
+                            <td>Japanese Oak</td>
+                        </tr>
+                        <tr class="diameter">
+                            <th>Diameter</th>
+                            <td>13mm (7A)</td>
+                        </tr>
+                        <tr class="length">
+                            <th>Length</th>
+                            <td>390mm</td>
+                        <tr class="tip">
+                            <th>Tip</th>
+                            <td>Oval Shape</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="promark">
+                    <tbody>
+                        <tr class="brand">
+                            <th>Brand</th>
+                            <td>PROMARK</td>
+                        </tr>
+                        <tr class="model">
+                            <th>Model</th>
+                            <td>Classic Attack</td>
+                        </tr>
+                        <tr class="material">
+                            <th>Material</th>
+                            <td>Lacquered Shira Kashi Oak</td>
+                        </tr>
+                        <tr class="diameter">
+                            <th>Diameter</th>
+                            <td>13mm (7A)</td>
+                        </tr>
+                        <tr class="length">
+                            <th>Length</th>
+                            <td>416mm</td>
+                        <tr class="tip">
+                            <th>Tip</th>
+                            <td>Oval Shape</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
     
         </article>
 
         <article id="maple">
-            <h2>MAPLE STICKS</h2>
-
-            <section id="introduction">
+            <section class="introduction">
+            <header><h2>MAPLE STICKS</h2></header>
                 <p>With its really lightweight and delicate touch, consider Maple as the opposite of Oak. Really popular among Jazz drummers, for example, Maple is about 20% lighter than Oak, but it is also much more fragile.</p>
                 <p>You should try Maple drumsticks if you are seeking a very delicate touch and plan on playing softly such as with Jazz or in specific situations like in a church where you can't play too loud.</p>
                 <p>Maple drumsticks can also be a good way to make fast drumming easier if you are struggling with a specific track. However, the rebound is much stronger and might require some practice before you get used to it.</p>
@@ -103,34 +213,141 @@
                 </ul>
             </nav>
 
-            <section id="comparison">
-                <div id="5a-maple">
-                    <figure id="tama">
-                        <img src="" alt="tama-5a-rhythm-mate" title="tama-5a-rhythm-mate"> <!-- https://www.tama.com/usa/products/detail/mrm5a.html -->
-                    </figure>
-                    <figure id="meinl">
-                        <img src="" alt="meinl-5a-hybrid" title="meinl-5a-hybrid"> <!-- https://meinlstickandbrush.com/en/products/sb136-m18114.html -->
-                    </figure>
-                </div>
+            <section class="comparison" id="5a-maple">
+                <header id="5a-maple"><h2>5A MAPLE</h2></header>
+                <figure id="tama">
+                    <a href="https://www.tama.com/usa/products/detail/mrm5a.html"><img src="img/maple/tama-5a-rhythm-mate.webp" alt="tama-5a-rhythm-mate" title="tama-5a-rhythm-mate"></a> <!--  -->
+                </figure>
+                <figure id="meinl">
+                    <a href="https://meinlstickandbrush.com/en/products/sb136-m18114.html"><img src="img/maple/meinl-5a-hybrid.webp" alt="meinl-5a-hybrid" title="meinl-5a-hybrid"></a> <!--  -->
+                </figure>
+
+                <table id="tama">
+                    <tbody>
+                        <tr class="brand">
+                            <th>Brand</th>
+                            <td>TAMA</td>
+                        </tr>
+                        <tr class="model">
+                            <th>Model</th>
+                            <td>Rhythm Mate</td>
+                        </tr>
+                        <tr class="material">
+                            <th>Material</th>
+                            <td>Maple</td>
+                        </tr>
+                        <tr class="diameter">
+                            <th>Diameter</th>
+                            <td>14mm (5A)</td>
+                        </tr>
+                        <tr class="length">
+                            <th>Length</th>
+                            <td>406mm</td>
+                        <tr class="tip">
+                            <th>Tip</th>
+                            <td>Oval Shape</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="meinl">
+                    <tbody>
+                        <tr class="brand">
+                            <th>Brand</th>
+                            <td>MEINL</td>
+                        </tr>
+                        <tr class="model">
+                            <th>Model</th>
+                            <td>Hybrid</td>
+                        </tr>
+                        <tr class="material">
+                            <th>Material</th>
+                            <td>Hard Maple</td>
+                        </tr>
+                        <tr class="diameter">
+                            <th>Diameter</th>
+                            <td>14.4mm (5A)</td>
+                        </tr>
+                        <tr class="length">
+                            <th>Length</th>
+                            <td>413mm</td>
+                        <tr class="tip">
+                            <th>Tip</th>
+                            <td>Acorn Shape</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
 
-            <section id="comparison">
-                <div id="7a-maple">
-                    <figure id="vic-firth">
-                        <img src="" alt="vic-firth-7a-american-heritage" title="vic-firth-7a-american-heritage"> <!-- https://vicfirth.com/products/american-heritager-7a -->
-                    </figure>
-                    <figure id="promark">
-                        <img src="" alt="promark-7a-finesse" title="promark-7a-finesse"> <!-- https://www.daddario.com/products/percussion/promark/promark-drum-set/promark-drum-set/finesse-7a-maple-drumstick-small-round-wood-tip/ -->
-                    </figure>
-                </div>
+            <section class="comparison" id="7a-maple">
+                <header id="7a-maple"><h2>7A MAPLE</h2></header>
+                <figure id="vic-firth">
+                    <a href="https://vicfirth.com/products/american-heritager-7a"><img src="img/maple/vic-firth-7a-american-heritage.webp" alt="vic-firth-7a-american-heritage" title="vic-firth-7a-american-heritage"></a> <!--  -->
+                </figure>
+                <figure id="promark">
+                    <a href="https://www.daddario.com/products/percussion/promark/promark-drum-set/promark-drum-set/finesse-7a-maple-drumstick-small-round-wood-tip/"><img src="img/maple/promark-7a-finesse.jpg" alt="promark-7a-finesse" title="promark-7a-finesse"></a> <!--  -->
+                </figure>
+
+                <table id="vic-firth">
+                    <tbody>
+                        <tr class="brand">
+                            <th>Brand</th>
+                            <td>VIC FIRTH</td>
+                        </tr>
+                        <tr class="model">
+                            <th>Model</th>
+                            <td>American Heritage</td>
+                        </tr>
+                        <tr class="material">
+                            <th>Material</th>
+                            <td>Lacquered Maple</td>
+                        </tr>
+                        <tr class="diameter">
+                            <th>Diameter</th>
+                            <td>13.7mm (7A)</td>
+                        </tr>
+                        <tr class="length">
+                            <th>Length</th>
+                            <td>393.7mm</td>
+                        <tr class="tip">
+                            <th>Tip</th>
+                            <td>Tear Drop</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="promark">
+                    <tbody>
+                        <tr class="brand">
+                            <th>Brand</th>
+                            <td>PROMARK</td>
+                        </tr>
+                        <tr class="model">
+                            <th>Model</th>
+                            <td>Finesse</td>
+                        </tr>
+                        <tr class="material">
+                            <th>Material</th>
+                            <td>Lacquered Maple</td>
+                        </tr>
+                        <tr class="diameter">
+                            <th>Diameter</th>
+                            <td>13.5mm (7A)</td>
+                        </tr>
+                        <tr class="length">
+                            <th>Length</th>
+                            <td>406.4mm</td>
+                        <tr class="tip">
+                            <th>Tip</th>
+                            <td>Small Round</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
     
         </article>
 
         <article id="hickory">
-            <h2>HICKORY STICKS</h2>
-
-            <section id="introduction">
+            <section class="introduction">
+                <header><h2>HICKORY STICKS</h2></header>
                 <p>If there is one wood that built a big reputation for itself thanks to its versatility, it is Hickory. Hickory is usually considered the most popular wood for drumsticks because it stands perfectly between Maple and Oak in terms of weight and density.</p>
                 <p>One common thing drummers like about Hickory is that it is dense and heavy enough to enjoy good longevity, while still being flexible enough to absorb more vibrations from the hit. In fact, it was used by the people of Scotland to make golf clubs for this very same reason.</p>
                 <p>Always look for American Hickory as it usually comes with much better quality than its Chinese counterpart. It is a bit more expansive, that's true, but the additional longevity and the better touch make up for the price.</p>
@@ -154,26 +371,132 @@
                 </ul>
             </nav>   
             
-            <section id="comparison">
-                <div id="5a-hickory">
-                    <figure id="promark">
-                        <img src="" alt="promark-5a-rebound-activegrip" title="promark-5a-rebound-activegrip"> <!-- https://www.daddario.com/products/percussion/promark/promark-drum-set/promark-drum-set/rebound-5a-activegrip-hickory-drumstick-acorn-wood-tip/ -->
-                    </figure>
-                    <figure id="vic-firth">
-                        <img src="" alt="vir-firth-5a-american-classic" title="vir-firth-5a-american-classic"> <!-- https://vicfirth.com/products/american-classic-5a -->
-                    </figure>
-                </div>
+            <section class="comparison" id="5a-hickory">
+                <header id="5a-hickory"><h2>5A HICKORY</h2></header>
+                <figure id="promark">
+                    <a href="https://www.daddario.com/products/percussion/promark/promark-drum-set/promark-drum-set/rebound-5a-activegrip-hickory-drumstick-acorn-wood-tip/"><img src="img/hickory/promark-5a-rebound-activegrip.jpg" alt="promark-5a-rebound-activegrip" title="promark-5a-rebound-activegrip"></a> <!--  -->
+                </figure>
+                <figure id="vic-firth">
+                    <a href="https://vicfirth.com/products/american-classic-5a"><img src="img/hickory/vir-firth-5a-american-classic.webp" alt="vir-firth-5a-american-classic" title="vir-firth-5a-american-classic"></a> <!--  -->
+                </figure>
+                <table id="promark">
+                    <tbody>
+                        <tr class="brand">
+                            <th>Brand</th>
+                            <td>PROMARK</td>
+                        </tr>
+                        <tr class="model">
+                            <th>Model</th>
+                            <td>Rebound</td>
+                        </tr>
+                        <tr class="material">
+                            <th>Material</th>
+                            <td>ActiveGrip Hickory</td>
+                        </tr>
+                        <tr class="diameter">
+                            <th>Diameter</th>
+                            <td>14.4mm (5A)</td>
+                        </tr>
+                        <tr class="length">
+                            <th>Length</th>
+                            <td>406.4mm</td>
+                        <tr class="tip">
+                            <th>Tip</th>
+                            <td>Acorn Shape</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="vic-firth">
+                    <tbody>
+                        <tr class="brand">
+                            <th>Brand</th>
+                            <td>VIC FIRTH</td>
+                        </tr>
+                        <tr class="model">
+                            <th>Model</th>
+                            <td>American Classic</td>
+                        </tr>
+                        <tr class="material">
+                            <th>Material</th>
+                            <td>Hickory</td>
+                        </tr>
+                        <tr class="diameter">
+                            <th>Diameter</th>
+                            <td>14.4mm (5A)</td>
+                        </tr>
+                        <tr class="length">
+                            <th>Length</th>
+                            <td>406.4mm</td>
+                        <tr class="tip">
+                            <th>Tip</th>
+                            <td>Tear Drop</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
 
-            <section id="comparison">
-                <div id="7a-hickory">
-                    <figure id="promark">
-                        <img src="" alt="promark-7a-rebound" title="promark-7a-rebound"> <!-- https://www.daddario.com/products/percussion/promark/promark-drum-set/promark-drum-set/rebound-7a-hickory-drumstick-acorn-wood-tip/ -->
-                    </figure>
-                    <figure id="vic-firth">
-                        <img src="" alt="vic-firth-7a-american-classic" title="vic-firth-7a-american-classic"> <!-- https://vicfirth.com/products/american-classic-7a-value-pack -->
-                    </figure>
-                </div>
+            <section class="comparison" id="7a-hickory">
+                <header id="7a-hickory"><h2>7A HICKORY</h2></header>
+                <figure id="promark">
+                    <a href="https://www.daddario.com/products/percussion/promark/promark-drum-set/promark-drum-set/rebound-7a-hickory-drumstick-acorn-wood-tip/"><img src="img/hickory/promark-7a-rebound.jpg" alt="promark-7a-rebound" title="promark-7a-rebound"></a> <!-- -->
+                </figure>
+                <figure id="vic-firth">
+                    <a href="https://vicfirth.com/products/american-classic-7a-value-pack"><img src="img/hickory/vic-firth-7a-american-classic.webp" alt="vic-firth-7a-american-classic" title="vic-firth-7a-american-classic"></a> <!--  -->
+                </figure>
+                <table id="promark">
+                    <tbody>
+                        <tr class="brand">
+                            <th>Brand</th>
+                            <td>PROMARK</td>
+                        </tr>
+                        <tr class="model">
+                            <th>Model</th>
+                            <td>Rebound</td>
+                        </tr>
+                        <tr class="material">
+                            <th>Material</th>
+                            <td>Lacquered Hickory</td>
+                        </tr>
+                        <tr class="diameter">
+                            <th>Diameter</th>
+                            <td>13.5mm (7A)</td>
+                        </tr>
+                        <tr class="length">
+                            <th>Length</th>
+                            <td>406.4mm</td>
+                        <tr class="tip">
+                            <th>Tip</th>
+                            <td>Acorn Shape</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="vic-firth">
+                    <tbody>
+                        <tr class="brand">
+                            <th>Brand</th>
+                            <td>VIC FIRTH</td>
+                        </tr>
+                        <tr class="model">
+                            <th>Model</th>
+                            <td>American Classic</td>
+                        </tr>
+                        <tr class="material">
+                            <th>Material</th>
+                            <td>Lacquered Hickory</td>
+                        </tr>
+                        <tr class="diameter">
+                            <th>Diameter</th>
+                            <td>13.7mm (7A)</td>
+                        </tr>
+                        <tr class="length">
+                            <th>Length</th>
+                            <td>393.7mm</td>
+                        <tr class="tip">
+                            <th>Tip</th>
+                            <td>Tear Drop - Nylon</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
 
         </article>
