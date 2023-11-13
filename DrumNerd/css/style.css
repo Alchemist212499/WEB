@@ -118,7 +118,7 @@ nav ul {
 }
 
 .primary-nav li a:hover {
-    background-color:maroon;
+    background-color:hsl(260, 30%, 65%);
     color: white;
     font-weight: bolder;
 }
