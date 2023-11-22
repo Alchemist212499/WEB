@@ -1,24 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEST</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script>
-        function removeData1(){
-            var x = document.getElementById("data1");
-            x.remove();
-        }
-        function removeData2(){
-            var x = document.getElementById("data2");
-            x.remove();
-        }
-    </script>
+    <title>Document</title>
 </head>
-
 <body>
     <table>
         <thead>
@@ -30,21 +16,20 @@
             </tr>
         </thead>
         <tbody>
-            <tr id="data1">
+            <tr>
                 <td>栏目一数据1</td>
                 <td>栏目二数据1</td>
                 <td>栏目三数据1</td>
-                <td><a href="#" class="remove" onclick="removeData1()">删除</a></td>
+                <td><a href="#" class="remove">删除</a></td>
             </tr>
-            <tr id="data2">
+            <tr>
                 <td>栏目一数据2</td>
                 <td>栏目二数据2</td>
                 <td>栏目三数据2</td>
-                <td><a href="#" class="remove" onclick="removeData2()">删除</a></td>
+                <td><a href="#" class="remove">删除</a></td>
             </tr>        
         </tbody>
     </table>
-    <a href="#" id="add" onclick="addData()">增加一行</a>
+    <a href="#" id="add">增加一行</a>
 </body>
-
 </html>

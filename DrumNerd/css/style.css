@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* font-family:'Courier New', Courier, monospace; */
-    font-family: 'Montserrat', 'Courier New';
+    font-family: 'Nunito', 'Courier New';
     /* background-color:#002349; */
 }
 

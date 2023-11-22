@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__h1">Essence Extract</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <article class="main__article contact">
+            <h2 class="contact__h2">Our Location</h2>
+            <address>
+                No.1158, 2nd Street <br> 
+                Xiasha Higher Education Park, Qiantang <br>
+                Hangzhou <br>
+                Zhejiang China <br>
+                <br>
+                Phone: <a href="tel:+18106019601">181-0601-9601</a>
+            </address>
+        </article>
+        <hr>
+        <article class="main__article contact">
+            <h2 class="contact__h2">Our Contact Form</h2>
+
+            <form action="https://httpbin.org/get" method="get" class="contact__form">
+                <fieldset class="contact__fieldset">
+                    <legend class="offscreen">Send Us A Message</legend>
+                    <p class="contact">
+                        <label class="contact__label" for="name">Name:</label>
+                        <input class="contact__input" type="text" name="name" id="name" placeholder="your name" required>
+                    </p>
+                    <p class="contact">
+                        <label class="contact__label" for="email">Email:</label>
+                        <input class="contact__input" type="email" name="email" id="email" placeholder="your email" required>
+                    </p>
+                    <p class="contact">
+                        <label class="contact__label" for="message">Your Message:</label>
+                        <br>
+                        <textarea class="contact__textarea" name="message" id="message" cols="30" rows="10"
+                            placeholder="Type your message here"></textarea>
+                    </p>
+                </fieldset>
+                <button class="contact__button" type="submit">Send</button>
+                <button class="contact__button" type="reset">Reset</button>
+            </form>
+        </article>
+    </main>
+    <footer class="footer">
+        <p>
+            <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+            <span class="nowrap">Essence Extract</span>
+        </p>
+    </footer>
+</body>
+</html>
