@@ -20,3 +20,5 @@ about the establishment of Essence Extract
 - (test text)
 
 - commit to updated repo 22050208
+
+- gitee auto pulled from github
