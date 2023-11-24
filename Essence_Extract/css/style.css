@@ -88,6 +88,7 @@ html {
 body {
     background-color: var(--BODY-BGCOLOR);
     color: var(--FONT-COLOR);
+
     min-height: 100vh;
     max-width: 800px;
     margin: 0 auto;
@@ -198,6 +199,7 @@ a:active {
 .main__article {
     scroll-margin-top: 6.5rem;
     margin: var(--MARGIN);
+    min-height: 100vh;
 }
 
 .main__article:first-child {
@@ -246,8 +248,30 @@ a:active {
 
 /* || CHAPTER */
 
+.author::before {
+    content: "-----";
+}
+
 .chapter__p {
     margin-bottom: 1em;
+}
+
+.chapter__p:last-child {
+    padding-bottom: 2rem;
+}
+
+.chapter__h1 {
+    text-align: center;
+}
+
+.chapter__h2 {
+    width: 100%;
+    position: sticky;
+    top: 75px;
+    background-color: var(--BODY-BGCOLOR);
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 @media screen and (min-width: 576px) {
