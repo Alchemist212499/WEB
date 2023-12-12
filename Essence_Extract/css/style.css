@@ -154,8 +154,6 @@ a:active {
     gap: 1rem;
 }
 
-
-
 /* || HERO */
 
 .hero {
@@ -190,6 +188,25 @@ a:active {
     text-align: center;
 }
 
+/* || ASIDE */
+
+.aside__button {
+    position: fixed;
+    display: flex;
+    width: 48px;
+    height: 48px;
+    right: 10px;
+    top: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.aside__ol {
+
+    list-style-type: none;
+    /* display: none; */
+}
 /* || MAIN */
 
 .main {
@@ -199,7 +216,6 @@ a:active {
 .main__article {
     scroll-margin-top: 6.5rem;
     margin: var(--MARGIN);
-    min-height: 100vh;
 }
 
 .main__article:first-child {
@@ -250,6 +266,10 @@ a:active {
 
 .author::before {
     content: "-----";
+}
+
+.chapter {
+    min-height: 100vh;
 }
 
 .chapter__p {
