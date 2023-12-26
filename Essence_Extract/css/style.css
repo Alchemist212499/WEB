@@ -190,7 +190,7 @@ a:active {
 
 /* || ASIDE */
 
-.aside__button {
+/* .aside__button {
     position: fixed;
     display: flex;
     width: 48px;
@@ -200,13 +200,29 @@ a:active {
     justify-content: center;
     align-items: center;
     padding: 1rem;
+} */
+
+.aside {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
 }
 
-.aside__ol {
-
-    list-style-type: none;
-    /* display: none; */
+.aside__button {
+    color: var(--FONT-COLOR);
+    background-color: var(--BUTTON-COLOR);
+    border: none;
 }
+
+.previous__button::before {
+    content: "<<";
+}
+
+.next__button::after {
+    content: ">>";
+}
+
 /* || MAIN */
 
 .main {
