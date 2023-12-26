@@ -243,6 +243,13 @@ a:active {
     min-height: calc(100vh - 20rem);
 }
 
+.bookTitle__a {
+    text-decoration: none;
+}
+
+.main__h1 {
+    text-align: center;
+}
 /* || CONTACT */
 
 .contact__h2 {
