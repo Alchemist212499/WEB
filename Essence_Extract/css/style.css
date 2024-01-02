@@ -17,6 +17,7 @@ input,
 button, 
 textarea {
     font: inherit;
+    text-align: center;
 }
 
 /* || VARIABLES */
