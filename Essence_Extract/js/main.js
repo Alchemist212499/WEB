@@ -76,7 +76,7 @@ const postComment = () => {
     const submitButton = document.getElementById("submitButton");
     const commentText = document.getElementById("commentText");
     const commentList = document.getElementById("commentList");
-    commentText.style.textAlign = "left";
+    //commentText.style.textAlign = "left";
 
     submitButton.onclick = () => {
         if (commentText.value) {
