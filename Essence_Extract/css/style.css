@@ -7,6 +7,16 @@
     box-sizing: border-box;
 }
 
+@font-face{
+    font-family: "Nunito";
+    src: url("../fonts/Nunito-VariableFont_wght.ttf");
+}
+
+@font-face{
+    font-family: "permanent marker";
+    src: url("../fonts/PermanentMarker-Regular.ttf");
+}
+
 img {
     display: block;
     max-width: 100%;
