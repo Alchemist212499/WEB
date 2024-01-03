@@ -19,6 +19,7 @@ textarea {
     font: inherit;
     text-align: center;
     justify-content: center;
+    resize: none;
 }
 
 /* || VARIABLES */
@@ -230,6 +231,7 @@ a:active {
 
 .main {
     padding: var(--PADDING-TB) var(--PADDING-SIDE);
+    min-height: 100vh;
 }
 
 .main__article {
@@ -328,14 +330,11 @@ a:active {
 
 .commentItem {
     display: flex;
-    flex-direction: row;
-
-}
-
-.buttonBox {
-    content: "  ";
-    justify-content: flex-end;
-    background-color: aqua;
+    justify-content: space-between;
+    background-color: var(--BGCOLOR-FADE);
+    border-radius: var(--BORDER-RADIUS-S);
+    margin: 5px;
+    border: var(--BORDERS);
 }
 
 .commentButton {
