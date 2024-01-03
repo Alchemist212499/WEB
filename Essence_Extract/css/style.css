@@ -268,6 +268,7 @@ a:active {
 
 .main__h1 {
     text-align: center;
+    font-size: 1.8rem;
 }
 /* || CONTACT */
 
@@ -326,6 +327,7 @@ a:active {
 .chapter__h1 {
     display: block;
     text-align: center;
+    font-size: 1.8rem;
 }
 
 .chapter__h2 {
