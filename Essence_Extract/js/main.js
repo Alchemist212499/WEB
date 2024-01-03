@@ -45,7 +45,6 @@ const pageRedirect = (firstPageNum, lastPageNum) => {
     });
 };
 
-
 const pageSettingsInit = (firstPageNum, lastPageNum) => {
     setPageLink(firstPageNum, lastPageNum);
     pageRedirect(firstPageNum, lastPageNum);
@@ -87,7 +86,7 @@ const postComment = () => {
         if (commentText.value) {
             let timeObj = getTimeObj();
             const commentObj = {
-                text: commentText.value,
+                text: commentText.value.trim(),
                 postTime: timeStringify(timeObj),
                 updateTime: timeStringify(timeObj),
                 commentID: generateCommentID(timeObj)
@@ -102,35 +101,30 @@ const postComment = () => {
             const editButton = document.createElement("button");
             //deleteButton.href = "#";
             addEditButton(editButton, commentObj);
-
             editButton.onclick = () => {
                 const editedComment = prompt("Edit Comment");
                 if (editedComment) {
                     timeObj = getTimeObj();
                     commentObj.updateTime = timeStringify(timeObj);
-                    commentObj.text = editedComment;
+                    commentObj.text = editedComment.trim();
                     localStorage.setItem(`${commentObj.commentID}`, JSON.stringify(commentObj));
                     editButton.parentNode.innerHTML = commentObj.updateTime + " " + commentObj.text;
                     commentItem.appendChild(editButton);    
                     commentItem.appendChild(deleteButton);
-                } else {
+                } else if (editedComment === ""){
                     alert("Please enter text!");
                 }
-
             }
-
             commentItem.appendChild(editButton);
 
             const deleteButton = document.createElement("button")
             //editButton.href = "#";
             addDeleteButton(deleteButton, commentObj);
-
             deleteButton.onclick = () => {
                 localStorage.removeItem(`${commentObj.commentID}`);
                 deleteButton.parentNode.remove();
                 commentText.value = "";
             }
-
             commentItem.appendChild(deleteButton);
         } else {
             alert("Please enter text!");
@@ -156,27 +150,24 @@ const initComments = () => {
                 if (editedComment) {
                     let timeObj = getTimeObj();
                     commentObj.updateTime = timeStringify(timeObj);
-                    commentObj.text = editedComment;
+                    commentObj.text = editedComment.trim();
                     localStorage.setItem(`${commentObj.commentID}`, JSON.stringify(commentObj));
                     editButton.parentNode.innerHTML = commentObj.updateTime + " " + commentObj.text;
                     commentItem.appendChild(editButton);   
                     commentItem.appendChild(deleteButton);
-                } else {
+                } else if (editedComment === ""){
                     alert("Please enter text!");
                 }
             }
-
             commentItem.appendChild(editButton);
 
             const deleteButton = document.createElement("button")
             //deleteButton.href = "#";
             addDeleteButton(deleteButton, commentObj);
-
             deleteButton.onclick = () => {
                 localStorage.removeItem(`${commentObj.commentID}`);
                 deleteButton.parentNode.remove();
             }
-
             commentItem.appendChild(deleteButton);
         }
     }
@@ -192,13 +183,13 @@ const addCommentItem = (commentItem, commentObj) => {
 const addDeleteButton = (deleteButton, commentObj) => {
     deleteButton.innerHTML = "Delete";
     deleteButton.id = commentObj.commentID;
-    deleteButton.className = "deleteButton";
+    deleteButton.className = "commentButton deleteButton";
 }
 
 const addEditButton = (editButton, commentObj) => {
     editButton.innerHTML = "Edit";
     editButton.id = commentObj.commentID;
-    editButton.className = "editButton";
+    editButton.className = "commentButton editButton";
 }
 
 pageSettingsInit(1,5);

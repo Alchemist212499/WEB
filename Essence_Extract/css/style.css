@@ -49,8 +49,8 @@ textarea {
 
     /* BORDERS */
     --BORDERS: 1px solid var(--BORDER-COLOR);
-    --BORDER-RADIUS: 15px;
-
+    --BORDER-RADIUS-L: 15px;
+    --BORDER-RADIUS-S: 5px;
     /* STANDARD PADDING */
     --PADDING-TB: 0.25em;
     --PADDING-SIDE: 2.5%;
@@ -275,14 +275,14 @@ a:active {
 .post__input,
 .post__textarea {
     padding: 0.5em;
-    border-radius: var(--BORDER-RADIUS);
+    border-radius: var(--BORDER-RADIUS-L);
     border-width: 2px;
     width: 100%;
 }
 
 .post__button {
     padding: 0.5em;
-    border-radius: var(--BORDER-RADIUS);
+    border-radius: var(--BORDER-RADIUS-L);
     background-color: var(--HIGHLIGHT-COLOR);
     color: var(--BUTTON-COLOR);
     font-weight: bold;
@@ -319,6 +319,31 @@ a:active {
     text-align: center;
     padding-bottom: 1rem;
     padding-top: 1rem;
+}
+
+/* || COMMENT */
+.commentList {
+    list-style: none;
+}
+
+.commentItem {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.buttonBox {
+    content: "  ";
+    justify-content: flex-end;
+    background-color: aqua;
+}
+
+.commentButton {
+    border-radius: var(--BORDER-RADIUS-S);
+    background-color: var(--HIGHLIGHT-COLOR);
+    color: var(--BUTTON-COLOR);
+    margin: 1px;
+    font-weight: bold;
 }
 
 @media screen and (min-width: 576px) {
