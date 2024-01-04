@@ -1,10 +1,7 @@
-const generateRandomUrl = (lastPageNum) => {
-    const randomNumber = Math.floor(Math.random() * lastPageNum + 1);
-    const pathName = location.href;
-    console.log(pathName);
-    const doubleSlashIndex = pathName.indexOf("//");
-    const httpsBefore = pathName.substring(0, doubleSlashIndex + 2);
-    const httpsAfter = pathName.substring(doubleSlashIndex + 2);
+const getUrlRoot = (urlPath) => {
+    const doubleSlashIndex = urlPath.indexOf("//");
+    const httpsBefore = urlPath.substring(0, doubleSlashIndex + 2);
+    const httpsAfter = urlPath.substring(doubleSlashIndex + 2);
     console.log("httpsBefore: " + httpsBefore);
     console.log("httpsAfter: " + httpsAfter);
     const firstSlashIndex = httpsAfter.indexOf("/");
@@ -15,7 +12,16 @@ const generateRandomUrl = (lastPageNum) => {
     const lastSlashIndex = rootAfter.indexOf("/index.html");
     const root = rootAfter.substring(0, lastSlashIndex + 1);
     console.log("root: " + root);
-    const randomUrl = httpsBefore + rootBefore + root + `Francis_Bacon/${randomNumber}.html`;;
+    const urlRoot = httpsBefore + rootBefore + root;
+    return urlRoot;
+} 
+
+const generateRandomUrl = (lastPageNum) => {
+    const randomNumber = Math.floor(Math.random() * lastPageNum + 1);
+    const urlPath = location.href;
+    console.log(urlPath);
+    const urlRoot = getUrlRoot(urlPath);
+    const randomUrl = urlRoot + `Francis_Bacon/${randomNumber}.html`;
     console.log(randomUrl);
     return randomUrl;
 }
@@ -91,7 +97,7 @@ const addQuoteChapter = (quoteChapter, chapterNumber, randomUrl) => {
 
 //const objectifyQuote
 
-const randomUrl = generateRandomUrl(5);
+const randomUrl = generateRandomUrl(10);
 const quoteObj = await requestQuote(randomUrl);
 console.log(quoteObj);
 displayQuote(quoteObj, randomUrl);

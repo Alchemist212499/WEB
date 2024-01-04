@@ -242,6 +242,12 @@ a:active {
     content: ">>";
 }
 
+.pageNum {
+    text-align: center;
+    border: var(--BORDERS);
+    border-radius: var(--BORDER-RADIUS-S);
+}
+
 /* || MAIN */
 
 .main {

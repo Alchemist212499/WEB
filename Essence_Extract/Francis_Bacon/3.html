@@ -29,12 +29,23 @@
     <main class="main">
         <h1 class="chapter__h1 book__title">&gt; Francis Bacon &lt;</h1>
         <article class="main__article chapter" id="3">
-            <h2 class="chapter__h2 chapter__title">3. Of Unity in Religion</h2>
-            <h3 class="chapter__h3 stay_tuned">Stay Tuned!</h3>
+            <h2 class="chapter__h2 chapter__title">3. Of Goodness, and Goodness of Nature</h2>
+            <!-- <h3 class="chapter__h3 stay_tuned">Stay Tuned!</h3> -->
+            <h3 class="chapter__h3 summary">Summary</h3>
+            <p class="chapter__p summary">
+                This chapter explained what goodness means, the properties of goodness, how to contain goodness, the opposite of goodness and the composition of goodness.
+            </p>
+            <h3 class="chapter__h3 quotes">Quotes</h3>
+            <p class="chapter__p quote" id="1">
+                "So good, that he is good for nothing."<span class="nowrap author">Somebody</span>
+            </p>
+            <p class="chapter__p quote" id="2">
+                "That the Christian faith had given up good men in prey to those that are tyrannical and unjust."<span class="nowrap author">Nicholas Machiavel</span>
+            </p>
         </article>
 
         <hr>
-
+        <h4 class="chapter__h4 commentList">Comment Section</h4>
         <ul class="commentList" id="commentList">
 
         </ul>
@@ -47,7 +58,7 @@
                 <p class="post">
                     <label class="post__label" for="message">Leave a Comment</label>
                     <textarea class="post__textarea" name="commentText" id="commentText" cols="30" rows="1"
-                        placeholder="Type your message here"></textarea>
+                        placeholder="Type your message here" maxlength="40"></textarea>
                 </p>
             </fieldset>
             <button class="post__button" id="submitButton" type="button">Send</button>

@@ -30,7 +30,7 @@ const pageRedirect = (firstPageNum, lastPageNum) => {
         const input = document.getElementById("pageNum");
         const newPageNum = Number(input.value);
 
-        if(newPageNum >= 1 && newPageNum <= 5) {
+        if(newPageNum >= firstPageNum && newPageNum <= lastPageNum) {
             const newPageUrl = `${newPageNum}.html`;
             location.href = newPageUrl;
         } else {
@@ -207,7 +207,7 @@ const randomQuote = () => {
     return randomQuote;
 }
 
-pageSettingsInit(1, 5);
+pageSettingsInit(1, 10);
 initComments();
 postComment();
 randomQuote();
