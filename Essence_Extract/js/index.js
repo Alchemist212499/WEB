@@ -1,14 +1,22 @@
 const generateRandomUrl = (lastPageNum) => {
     const randomNumber = Math.floor(Math.random() * lastPageNum + 1);
-    const pathName = location.pathname;
+    const pathName = location.href;
     console.log(pathName);
-    const indexStart = pathName.substring(1).indexOf("/");
-    const root = pathName.substring(0, indexStart+1);
+    const doubleSlashIndex = pathName.indexOf("//");
+    const httpsBefore = pathName.substring(0, doubleSlashIndex + 2);
+    const httpsAfter = pathName.substring(doubleSlashIndex + 2);
+    console.log("httpsBefore: " + httpsBefore);
+    console.log("httpsAfter: " + httpsAfter);
+    const firstSlashIndex = httpsAfter.indexOf("/");
+    const rootBefore = httpsAfter.substring(0, firstSlashIndex + 1);
+    const rootAfter = httpsAfter.substring(firstSlashIndex + 1);
+    console.log("rootBefore: " + rootBefore);
+    console.log("rootAfter: " + rootAfter);
+    const lastSlashIndex = rootAfter.indexOf("/index.html");
+    const root = rootAfter.substring(0, lastSlashIndex + 1);
     console.log("root: " + root);
-    let randomUrl = root + `/Francis_Bacon/${randomNumber}.html`;;
-    if (! root.includes("Essence")) {
-        let randomUrl = root + `/Essence_Extract/Francis_Bacon/${randomNumber}.html`;
-    }
+    const randomUrl = httpsBefore + rootBefore + root + `Francis_Bacon/${randomNumber}.html`;;
+    console.log(randomUrl);
     return randomUrl;
 }
 
