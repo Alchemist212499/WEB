@@ -3,10 +3,12 @@ const generateRandomUrl = (lastPageNum) => {
     const pathName = location.pathname;
     console.log(pathName);
     const indexStart = pathName.substring(1).indexOf("/");
-    const indexEnd = pathName.indexOf("/Francis");
-    const root = pathName.substring(indexStart + 1, indexEnd);
-    console.log(root);
-    const randomUrl = root + `/Francis_Bacon/${randomNumber}.html`;
+    const root = pathName.substring(0, indexStart+1);
+    console.log("root: " + root);
+    let randomUrl = root + `/Francis_Bacon/${randomNumber}.html`;;
+    if (! root.includes("Essence")) {
+        let randomUrl = root + `/Essence_Extract/Francis_Bacon/${randomNumber}.html`;
+    }
     return randomUrl;
 }
 
