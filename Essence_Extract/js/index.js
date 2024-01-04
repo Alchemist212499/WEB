@@ -1,10 +1,12 @@
 const generateRandomUrl = (lastPageNum) => {
     const randomNumber = Math.floor(Math.random() * lastPageNum + 1);
     const pathName = location.pathname;
-    const index = pathName.substring(1).indexOf("/");
-    const root = pathName.substring(0, index + 1);
+    console.log(pathName);
+    const indexStart = pathName.substring(1).indexOf("/");
+    const indexEnd = pathName.indexOf("/Francis");
+    const root = pathName.substring(indexStart + 1, indexEnd);
+    console.log(root);
     const randomUrl = root + `/Francis_Bacon/${randomNumber}.html`;
-    console.log(randomUrl);
     return randomUrl;
 }
 
