@@ -246,7 +246,7 @@ a:active {
 
 .main {
     padding: var(--PADDING-TB) var(--PADDING-SIDE);
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 .main__article {
@@ -260,6 +260,29 @@ a:active {
 
 .main__article:last-child {
     min-height: calc(100vh - 20rem);
+}
+
+.dailyQuote__p {
+    background-color:#b2cdf1;
+    border: var(--BORDERS);
+    border-radius: var(--BORDER-RADIUS-S);
+    padding: var(--PADDING-SIDE);
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.dailyQuote__author {
+    color: #3670dd;
+}
+
+.dailyQuote__chapter {
+    text-decoration: none;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.dailyQuote__chapter:hover {
+    color: var(--LINK-HOVER);
 }
 
 .bookTitle__a {

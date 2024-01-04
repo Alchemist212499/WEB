@@ -199,6 +199,22 @@ const addEditButton = (editButton, commentObj) => {
     editButton.className = "commentButton editButton";
 };
 
-pageSettingsInit(1,5);
+const randomQuote = () => {
+    const quoteCount = document.getElementsByClassName("quote").length;
+    const randomNumber = Math.floor(Math.random() * quoteCount);
+    const randomQuote = document.getElementsByClassName("quote")[randomNumber];
+    console.log(randomQuote.innerText);
+    return randomQuote;
+}
+
+pageSettingsInit(1, 5);
 initComments();
 postComment();
+randomQuote();
+
+/* export default class pageNumberConst {
+    firstPageNum = 1;
+    lastPageNum = 5;
+} */
+
+//export default randomQuote;
