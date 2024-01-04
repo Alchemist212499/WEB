@@ -1,7 +1,7 @@
 const generateRandomUrl = (lastPageNum) => {
     const randomNumber = Math.floor(Math.random() * lastPageNum + 1);
-    const randomUrl = `/Essence_Extract/Francis_Bacon/${randomNumber}.html`;
-    console.log(randomUrl);
+    const randomUrl = `../Francis_Bacon/${randomNumber}.html`;
+    console.log(location.pathname);
     return randomUrl;
 }
 
